@@ -1,4 +1,0 @@
-name: TimeMoney
-main: timemoney.Main
-version: 0.0.1
-depend: [Vault,TickEvent]
