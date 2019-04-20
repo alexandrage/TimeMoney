@@ -1,9 +1,9 @@
 package timemoney;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class Configs {
-	private Map<String, CustomConfig> sfg = new HashMap<String, CustomConfig>();
+	private Map<String, CustomConfig> sfg = new ConcurrentHashMap<String, CustomConfig>();
 
 	public CustomConfig get(String name) {
 		if (sfg.get(name) == null)
